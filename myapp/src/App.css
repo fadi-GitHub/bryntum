@@ -1,0 +1,11 @@
+@import "@bryntum/scheduler/scheduler.material.css";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+#root {
+  height: 100vh;
+}
