@@ -41,6 +41,10 @@ function App() {
     columns={columnsConfig}
     eventEditFeature = {eventEditConfig}
     onBeforeEventEditShow={handleBeforeEventEditSHow}
+    eventMenuFeature = {false}
+    scheduleMenuFeature = {false}
+    timeAxisHeaderMenuFeature= {false}
+    cellMenuFeature = {false}
     />
     </>
   );
