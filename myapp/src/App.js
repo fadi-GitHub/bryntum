@@ -41,10 +41,32 @@ function App() {
     columns={columnsConfig}
     eventEditFeature = {eventEditConfig}
     onBeforeEventEditShow={handleBeforeEventEditSHow}
-    eventMenuFeature = {false}
-    scheduleMenuFeature = {false}
-    timeAxisHeaderMenuFeature= {false}
-    cellMenuFeature = {false}
+    eventMenuFeature = {{
+      items : {
+        editEvent: false,
+        moveForward: {
+          icon: "b-fa b-fa-caret-right",
+          text: "Forward 1 hour",
+          cls: "b-seperator",
+          weight: 400,
+          onItem: ({eventRecord}) => {
+            eventRecord.shift(1, "hour");
+          }
+        }
+      }
+    }}
+    timeAxisHeaderMenuFeature = {{
+      items: {
+        dateRange:{
+          text: "Date range",
+          weight: 190,
+          style: {
+            background: "green",
+          }
+        }
+      }
+    }}
+    
     />
     </>
   );
